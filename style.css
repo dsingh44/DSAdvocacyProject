@@ -2,10 +2,170 @@ html {
   height: 100%;
   width: 100%;
 }
-body {
-  background-color: lightblue;
+
+.header{
+  padding: 10px;
+  margin: 10px;
+  padding-top: 100px ;
+  margin-bottom: 75px;
+  text-align: center; 
 }
+
+#header-left{
+  width:95%; 
+}
+
+#header_right{
+  width:5%;
+}
+
+#header-img{
+  margin-left: 10px;
+  margin-right: 10px;
+  width:700px;
+  height:350px;
+  max-width: 100%;  
+}
+
 .custom{
   color:red;
   margin-top: 60px;
+  text-align: center;
 }
+
+/*
+  style rules for the body of  webpage.
+  These rules will be applied to all elements.
+*/
+body {
+
+    /* Add a background color or image */
+    background-color: white;
+    background-image: url('');
+
+    /* Customize the font, size, and color for text*/
+    font-family: Arial;
+    font-size: 16px;
+    color: blue;
+
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/*
+  Style Text: Add style rules for  headings  paragraphs and links
+*/
+
+h1 {
+ 
+  
+}
+
+h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+
+}
+.iframe-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:60vh;
+}
+
+
+h3 {
+
+}
+
+p {
+  padding: 40px;
+  margin: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+a {
+  
+
+}
+a:link{
+  color: #0000FF;
+  text-decoration: none;
+}
+a:visited{
+  color: #800080;
+}
+a:hover{
+  color: #FF0000;
+  text-decoration: underline;
+}
+a:active{
+  color:#008000
+}
+
+/*
+  Style Button
+*/
+.button-container{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color:  #008CBA;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #333;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: mintcream;
+  color:red;
+}
+/*
+styles of image and text
+*/
+.image-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap:10px;  
+}
+.image-wrapper{
+  text-align: center;
+}
+.image-wrapper img {
+  display: block;
+  object-fit: cover;
+  width:350px;
+  height:250px;
+  margin-right: 25px;
+}
+.image-wrapper p{
+  margin-top: 0;
+}
+
+#articletitle{
+  margin: 40px;
+  padding: 40px;
+}
+
+ 
+
+
+ 
