@@ -113,23 +113,25 @@ Header Section styles
   padding-top: 100px ;
   margin-bottom: 75px;
   text-align: center; 
+  align-items:center;
 }
 
 .header-item:nth-of-type(1){
-  width:95%; 
+  text-align: center;
+  width:20%; 
 }
 
 .header-item:nth-of-type(2){
-  width:5%;
+  width:80%;
 }
-
 #header-img{
   margin-left: 10px;
   margin-right: 10px;
-  width:700px;
-  height:350px;
+  width:18000px;
+  height:600px;
   max-width: 100%;  
 }
+
 
 .custom{
   color:red;
@@ -266,6 +268,25 @@ styles of images and text
 .image-wrapper p{
   margin-top: 0;
 }
+
+.petition-container{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  width:100;
+  padding-bottom: 50px;
+}
+.petition-para{
+  width:55%;
+  padding-right: 10px;
+}
+
+
+.signatures{
+  width: 45%;
+  padding-right: 10px;
+}
+
 
 #articletitle{
   margin: 40px;
