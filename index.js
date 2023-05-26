@@ -1,5 +1,4 @@
 // Query for button with id theme-button
-
 let themeButton = document.getElementById("theme-button");
 
 //Dark mode function
@@ -9,13 +8,11 @@ const toggleDarkMode = () => {
 // click event listener for theme button
 themeButton.addEventListener("click",toggleDarkMode);
 
-
-
 // query for the sign now button 
 const signNowButton = document.querySelector('#sign-now-button');
 
 const addSignature = () => {
-   //code to manipulate the DOM here
+  //code to manipulate the DOM 
   const name = document.querySelector('#name').value;
   const hometown=document.querySelector('#hometown').value;
 
@@ -29,5 +26,31 @@ const addSignature = () => {
   document.querySelector('#hometown').value='';
 }
 
-// Add a click event listener to the sign now button here
-signNowButton.addEventListener("click",addSignature);
+// validation form function
+const validateForm =() => {
+  let containsErrors = false;
+
+  var petitionInputs = document.getElementById("sign-petition").elements;
+
+  //Loop through all inputs
+  for(let i=0; i< petitionInputs.length;i++){
+
+    if (petitionInputs[i].value.length<2){
+      petitionInputs[i].classList.add('error');
+      containsErrors =true;
+    }
+    else{
+      petitionInputs[i].classList.remove('error');
+    }
+  }
+  
+  //call add signature and clear fields if no error
+  if(containsErrors== false){
+    addSignature();
+    for (let index = 0; index < petitionInputs.length; index++) {
+      petitionInputs[i].value ="";
+      containsErrors=false;
+    }
+  }
+}
+signNowButton.addEventListener('click',validateForm);
