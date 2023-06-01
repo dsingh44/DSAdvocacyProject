@@ -1,158 +1,25 @@
 /*
 Styles for HTML document
 */
-
 html {
   height: 100%;
   width: 100%;
 }
 
-
-/* Part 1: Navbar */
-
-/* style rule for Navigation bar container */
-.navbar ul {
-  list-style: none;
-  overflow:hidden;
-  position:fixed;
-  top:0;
-  width:100%;
-  margin-bottom: 0;
-}
-
-/* Style rule for individual list items in navigation bar */
-.navbar ul li {
-  float: left;
-  margin: 10px;
-}
-
-
-/* Style rule for links in navbar */
-.navbar ul li a {
-  display:block;
-  font-family: Arial;
-  color:black;
-  text-align:center;
-  padding:10px 15px;;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-/* Style rule set for hovered link */
-.navbar ul li a:hover {
-  font-weight: bold;
-}
-
-/* add style to button */
-#theme-button {
-  position:fixed;
-  right: 50px;
-  top:25px;
-  padding:15px;
-}
-
-/* customize dark mode theme */
-.dark-mode {
-  background-color: black;
-  color:white;
-  
-}
-.dark-mode .navbar ul li a{
-  color:white;
-}
-
-
-
-
-
-
-/* Part 2: Flexbox */
-
-/* General style rule set for flex container */
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-
-/* Style rules for flex-item 1 */
-.flex-item:nth-of-type(1) {
-
-}
-
-/* Style rules for flex-item 2 */
-.flex-item:nth-of-type(2) {
-
-}
-
-/* Style rules for flex-item 3 */
-.flex-item:nth-of-type(3) {
-
-}
-
-
-/* Style set for all flex-items */
-.flex-item {
-  background: white;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
 /*
-Header Section styles
+  style rules for the body of  webpage.These rules will be applied to all elements.
 */
 
-.header-container{
-  display:flex;
-  flex-direction: column;
-  padding: 10px;
-  margin-top: 20px;
-  margin: 10px;
-  padding-top: 100px ;
-  margin-bottom: 75px;
-  text-align: center; 
-  align-items:center;
-}
-
-.header-item:nth-of-type(1){
-  text-align: center;
-  width:20%; 
-}
-
-.header-item:nth-of-type(2){
-  width:80%;
-}
-#header-img{
-  margin-left: 10px;
-  margin-right: 10px;
-  width:18000px;
-  height:600px;
-  max-width: 100%;  
-}
-
-
-.custom{
-  color:red;
-  margin-top: 60px;
-  text-align: center;
-}
-
-/*
-  style rules for the body of  webpage.
-  These rules will be applied to all elements.
-*/
 body {
-
     /* Add a background color or image */
     background-color: white;
     background-image: url('');
 
     /* Customize the font, size, and color for text*/
     font-family: Arial;
-    font-size: 16px;
+    font-size: 17px;
     color: blue;
+    font-family: Courier, monospace;
 
     /* Adjust the padding and margins */
     padding-top: 0;
@@ -166,46 +33,117 @@ body {
     margin-bottom: 0;
 }
 
+/*  Navbar */
+/* style rule for Navigation bar container */
+.navbar ul {
+  list-style: none;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  width:100%;
+  margin-bottom: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style rule for individual list items in navigation bar */
+.navbar ul li {
+  float: left;
+  margin: 10px;
+}
+
+/* Style rule for links in navbar */
+.navbar ul li a {
+  display:block;
+  font-family: Arial;
+  color:black;
+  text-align:center;
+  padding:15px 25px;;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bold;
+}
+
+/* add style dark mode button */
+#theme-button {
+  position: absolute;
+  margin-top: 4px;
+}
+
+/* customize dark mode theme */
+.dark-mode {
+  background-color: black;
+  color:white;
+}
+.dark-mode .navbar ul li a{
+  color:white;
+}
+
 /*
-  Style Text: Add style rules for  headings  paragraphs and links
+Header Section styles
+*/
+.header-container{
+  display:flex;
+  flex-direction: column;
+  padding:10px;
+  margin:10px;
+  text-align: center; 
+  align-items:center;
+}
+.header-item:nth-of-type(1){
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom:20px;
+  width:20%; 
+}
+.header-item:nth-of-type(2){
+  width:80%;
+  margin-bottom:40px;
+  font-size:19px;
+}
+#header-img{
+  width:18000px;
+  height:600px;
+  max-width: 100%;  
+}
+
+.custom{
+  color:red;
+  text-align: center;
+  font-size:28px;
+}
+
+/*
+  Style Text: Add style rules for paragraphs, video
 */
 
-h1 {
- 
-  
+.aboutpar{
+  margin: 40px 90px 100px 90px;
+  font-size: 18px; 
 }
-
-h2 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width:50%;
-
-}
-.iframe-container{
+iframe {
+  width:550px;
+  height:300px;
   display:flex;
-  justify-content: center;
-  align-items: center;
-  height:60vh;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.revealable.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
-
-h3 {
-
-}
-
-p {
-  padding: 40px;
-  margin: 40px;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-
-a {
-  
-
-}
 /*
 Styles for links
 */
@@ -225,75 +163,81 @@ a:active{
 }
 
 /*
-  Style Button
+  Style Buttons
 */
 .button-container{
   text-align: center;
-  margin-bottom: 20px;
 }
-
 button {
   background-color:  #008CBA;
   color: white;
   font-size: 16px;
   text-align: center;
-  border: 1px solid #333;
-  padding: 15px 32px;
+  border: 1px solid blue;
+  padding: 12px 25px;
   cursor: pointer;
 }
 button:hover{
-  background-color: mintcream;
+  background-color: black;
   color:red;
 }
+
 /*
-styles of images and text
+styles for graph images and text
 */
 .image-container{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-  gap:10px;  
+  align-items: flex-start; 
 }
 .image-wrapper{
   text-align: center;
+  margin-right: 40px;
 }
 .image-wrapper img {
   display: block;
   object-fit: cover;
   width:350px;
   height:250px;
-  margin-right: 25px;
+  margin-bottom: 80px;;
 }
 .image-wrapper p{
-  margin-top: 0;
+  margin-top: 90px;
+  font-size: 18px;
 }
 
+/*
+styles for petition part
+*/
+#petition h2{
+  text-align: center;
+}
 .petition-container{
   display: flex;
   flex-direction: row;
-  gap:20px;
-  width:100;
-  padding-bottom: 50px;
+  width:100; 
 }
 .petition-para{
   width:55%;
-  padding-right: 10px;
+  margin: 40px 90px 40px 90px;
+  font-size: 18px;
 }
-
-
 .signatures{
   width: 45%;
-  padding-right: 10px;
+  margin-top: 20px;
+  font-size:18px;
 }
-
-
-#articletitle{
-  margin: 40px;
-  padding: 40px;
+#sign-petition{
+  margin-left: 90px;
+  color:purple;
+  font-weight:bold;
+  font-size:20px;
 }
-
-/* style for petition validation
+#sign-now-button{
+  margin: 20px 0px 50px 240px;
+}
+/* petition validation
 */
 .error{
   border-style: solid;
@@ -301,7 +245,43 @@ styles of images and text
   border-color:red;
   background:pink;
 }
- 
 
+#articletitle{
+  margin-left:90px;
+  font-size:19px;
+}
 
- 
+/* The modal that covers the background and prevent user interactions*/
+.modal {
+  display: none; /*hide the modal by default*/
+  position: fixed;
+  z-index: 2;/* position the modal on top of all elements on screen*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue;
+  color:black;
+  text-align: center;
+  font-size:3rem;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+#thanks-modal-content {
+  width: 20rem; /* default width for text container*/
+}
+#modal-text-container {
+  display:flex; /* add flexbox to center the text and button */
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}

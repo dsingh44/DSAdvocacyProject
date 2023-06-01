@@ -6,34 +6,22 @@
   <meta name="viewport" content="width=device-width">
   <title>Climate Change</title>
   <link rel="icon" href="img/tabicon.png">
-  
   <link href="reset.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="reset-webview.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="style.css">
-  
 </head>
 
 <body>
-  
   <!--  Navbar  -->
   <div class="navbar">
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home">Home </a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#graphs">Graphs</a></li>
-      <li><a href="#news">News</a></li>
-      
+      <li><a href="#graphs">Graphs📈</a></li>
+      <li><a href="#petition">Support📝</a></li>
+      <li><a href="#news">News📰 </a></li>
+      <li><button id="theme-button">Toogle Dark Mode</button></li> 
     </ul>
-  </div>
-  <li><button id="theme-button">Toogle Dark Mode</button></li>
-  
-  <!--  Flexbox Layout  -->
-  <div class="container">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
   </div>
   
   <div class="header-container">
@@ -46,21 +34,18 @@
       <h3>Act now, save tomorrow: fight climate change today!</h3>
     </div>
   </div>
-
+  
   <!----About section--->
-  <h2 class ="custom"> What is climate change ?</h2>
-  <p> Climate change refers to long-term changes in the Earth's average weather patterns, such as temperature, precipitation, and wind. It is largely caused by human activities, particularly the emission of greenhouse gases from burning fossil fuels, deforestation, and other industrial processes. Climate change is a problem because it leads to a range of negative impacts on ecosystems, human health, and the global economy, including more frequent and severe weather events, sea level rise, and food and water scarcity.
+  <h2 class ="custom revealable"> What is climate change ?</h2>
+  <p class = "aboutpar revealable"> Climate change refers to long-term changes in the Earth's average weather patterns, such as temperature, precipitation, and wind. It is largely caused by human activities, particularly the emission of greenhouse gases from burning fossil fuels, deforestation, and other industrial processes. Climate change is a problem because it leads to a range of negative impacts on ecosystems, human health, and the global economy, including more frequent and severe weather events, sea level rise, and food and water scarcity.
   </p>
   <br>
+  <iframe src="https://www.youtube.com/embed/-D_Np-3dVBQ"></iframe>
 
-  <div class="iframe-container">
-    <iframe src="https://www.youtube.com/embed/-D_Np-3dVBQ"></iframe>
-  </div>
   
   <div class="button-container">
     <button  type= "button"> Graphs</button>
   </div>
-
   <div class="image-container">
     <div class="image-wrapper">
       <p> CO2</p>
@@ -77,7 +62,7 @@
   </div>
 
   <div class="petition" id="petition">
-    <h2>Sign Our Petition 📢 </h2>
+    <h2 class = custom >Sign Our Petition 📢 </h2>
     <div class="petition-container">
       <div class="petition-para">
         It's time to take action against climate change and safeguard our planet for future generations. Join us in advocating for renewable energy solutions and reducing carbon emissions. Together, we can make a difference. Sign the petition today to support climate-friendly policies and create a sustainable future for all.
@@ -89,26 +74,35 @@
         <p>🖊️ Amy from Japan Town support this</p>
       </div>
     </div>
+    
     <!---- sign petition form --->
     <form id="sign-petition" title="sign-petition">
       <label for ="name"> Name: </label>
       <input type="text" id="name" placeholder="Name" required>
-      
       <label for="hometown"> Hometown: </label>
       <input type="text" id="hometown" placeholder="Hometown" required>
-      
     </form>
+    
     <!-------sign Now button --->
     <button id="sign-now-button">Sign Now</button>
     
   </div>
 
+  <!--Modal -->
+  <div id="thanks-modal" class="modal">
+    <!-- Model content -->
+    <div class ="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content"></p>
+      </div>
+      <img src ="img/thankyou.png" />
+    </div>
+  </div>
 
   <h2 class ="custom">Recent News</h2>
-  <a class="newslink"
-     href="https://climate.nasa.gov">
+  <a class="newslink"href="https://climate.nasa.gov">
      <article>
-      <h3 id="articletitle"> Understanding our planet to benefit humankind</h3>
+       <h3 id="articletitle"> Understanding our planet to benefit humankind</h3>
      </article>
   </a>
   
