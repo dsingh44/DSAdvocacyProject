@@ -5,11 +5,9 @@ html {
   height: 100%;
   width: 100%;
 }
-
 /*
   style rules for the body of  webpage.These rules will be applied to all elements.
 */
-
 body {
     /* Add a background color or image */
     background-color: white;
@@ -123,7 +121,7 @@ Header Section styles
 */
 
 .aboutpar{
-  margin: 40px 90px 100px 90px;
+  margin: 40px 90px 150px 90px;
   font-size: 18px; 
 }
 iframe {
@@ -131,7 +129,7 @@ iframe {
   height:300px;
   display:flex;
   margin: auto;
-  margin-bottom: 150px;
+  margin-bottom: 155px;
 }
 .revealable {
   position: relative;
@@ -180,6 +178,7 @@ button {
 button:hover{
   background-color: black;
   color:red;
+  margin-top: 20px;
 }
 
 /*
@@ -200,10 +199,11 @@ styles for graph images and text
   object-fit: cover;
   width:350px;
   height:250px;
-  margin-bottom: 80px;;
+  margin-bottom: 220px;;
 }
 .image-wrapper p{
-  margin-top: 90px;
+  margin-top: 150px;
+  margin-bottom:50px;
   font-size: 18px;
 }
 
@@ -220,12 +220,12 @@ styles for petition part
 }
 .petition-para{
   width:55%;
-  margin: 40px 90px 40px 90px;
+  margin: 90px 200px 165px 90px;
   font-size: 18px;
 }
 .signatures{
   width: 45%;
-  margin-top: 20px;
+  margin-top: 70px;
   font-size:18px;
 }
 #sign-petition{
@@ -235,7 +235,7 @@ styles for petition part
   font-size:20px;
 }
 #sign-now-button{
-  margin: 20px 0px 50px 240px;
+  margin: 20px 0px 250px 260px;
 }
 /* petition validation
 */
@@ -248,6 +248,7 @@ styles for petition part
 
 #articletitle{
   margin-left:90px;
+  margin-top:70px;
   font-size:19px;
 }
 
