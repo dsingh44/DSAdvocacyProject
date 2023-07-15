@@ -14,9 +14,8 @@ body {
     background-image: url('');
 
     /* Customize the font, size, and color for text*/
-    font-family: Arial;
     font-size: 17px;
-    color: blue;
+    color: #0F5298;
     font-family: Courier, monospace;
 
     /* Adjust the padding and margins */
@@ -73,6 +72,7 @@ body {
   margin-top: 4px;
 }
 
+
 /* customize dark mode theme */
 .dark-mode {
   background-color: black;
@@ -111,7 +111,7 @@ Header Section styles
 }
 
 .custom{
-  color:red;
+  color:#FF4F4B;
   text-align: center;
   font-size:28px;
 }
@@ -167,17 +167,18 @@ a:active{
   text-align: center;
 }
 button {
-  background-color:  #008CBA;
+  background-color: #0F5298;
   color: white;
   font-size: 16px;
   text-align: center;
   border: 1px solid blue;
   padding: 12px 25px;
   cursor: pointer;
+  border-radius: 10px;
 }
 button:hover{
   background-color: black;
-  color:red;
+  color:#FF4F4B;
   margin-top: 20px;
 }
 
@@ -230,7 +231,7 @@ styles for petition part
 }
 #sign-petition{
   margin-left: 90px;
-  color:purple;
+  color:#FF4F4B;
   font-weight:bold;
   font-size:20px;
 }
@@ -285,4 +286,14 @@ styles for petition part
   flex-direction: column;
   align-items:center;
   justify-content: center;
+}
+
+/*style for footer section*/
+footer{
+  background-color: #0F5298;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  width:100%;
+  color:white
 }
